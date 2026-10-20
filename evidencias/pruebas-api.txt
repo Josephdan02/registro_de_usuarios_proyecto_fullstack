@@ -1,0 +1,18 @@
+﻿Probando la API en http://localhost:3000/api
+
+[OK]   GET /health responde 200 y MySQL conectado
+[OK]   GET /api/users responde 200 con un arreglo
+[OK]   POST sin datos responde 400
+[OK]   POST con correo inválido responde 400
+[OK]   POST registra el usuario y responde 201
+[OK]   POST con correo duplicado responde 409
+[OK]   GET /api/users/:id encuentra el usuario creado
+[OK]   GET con ID no numérico responde 400
+[OK]   GET con ID inexistente responde 404
+[OK]   PUT actualiza el usuario y responde 200
+[OK]   PUT con ID inexistente responde 404
+[OK]   DELETE elimina el usuario y responde 200
+[OK]   GET después de DELETE responde 404
+[OK]   DELETE repetido responde 404
+
+Resultado: 14 pruebas correctas, 0 fallidas.
